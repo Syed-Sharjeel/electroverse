@@ -10,6 +10,7 @@ google-auth-httplib2==0.2.0
 googleapis-common-protos==1.69.2
 # Chroma Vector Store
 chromadb==1.0.12
+pysqlite3-binary>=0.5.2.post2
 protobuf<5.0.0  # Required for chromadb compatibility
 # PDF Text Extraction
 PyMuPDF==1.25.5
