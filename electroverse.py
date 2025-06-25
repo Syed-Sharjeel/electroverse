@@ -5,6 +5,9 @@ from google import genai
 from google.api_core import retry
 from google.genai import types
 import kagglehub
+import sys
+import pysqlite3
+sys.modules["sqlite3"] = pysqlite3
 import chroma_db
 import chromadb
 from chromadb import EmbeddingFunction, Embeddings
