@@ -1,0 +1,17 @@
+# Core Frontend
+streamlit==1.37.1
+# Google Generative AI & Dependencies
+google-genai==1.7.0
+google-api-core==2.24.2
+google-ai-generativelanguage==0.6.15
+google-api-python-client==2.166.0
+google-auth==2.38.0
+google-auth-httplib2==0.2.0
+googleapis-common-protos==1.69.2
+# Chroma Vector Store
+chromadb==1.0.12
+protobuf<5.0.0  # Required for chromadb compatibility
+# PDF Text Extraction
+PyMuPDF==1.25.5
+# Dataset Downloader
+kagglehub==0.3.12
