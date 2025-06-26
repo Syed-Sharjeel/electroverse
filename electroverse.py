@@ -58,7 +58,7 @@ query = st.chat_input("Ask a question about the textbook:")
 
 develepor_info = {
     "Name": "Hafiz Syed Sharjeel Najam",
-    "Education": "BE - Electrical Engineering from NED University Karachi",
+    "Education": "BE - Electrical Engineering from NED University Karachi (Currently)",
     "Intrests": ['Power Systems', 'Generative AI', 'Machine Learning', 'Data Science', 'Python'],
     "Certifications": {
         "Certified Data Scientist": "NED Academy",
