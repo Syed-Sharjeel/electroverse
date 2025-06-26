@@ -45,7 +45,7 @@ vector_store, embed_fn = load_chroma_db()
 
 
 # Streamlit UI
-st.title("AI-Powered Assistant for *Fundamentals of Electric Circuits*")
+st.title("⚡ ElectroVerse: Your AI Assistant for Fundamentals of Electric Circuits")
 
 if "messages" not in st.session_state:
     st.session_state.messages = []
