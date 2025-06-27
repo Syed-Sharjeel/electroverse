@@ -2,3 +2,4 @@
 base="dark"
 primaryColor="#008b8b"
 font = "sans serif"
+wideMode = true
