@@ -16,7 +16,7 @@ def initial_run_gemini():
     return genai_client
 
 def doc_run():
-    doc_desc = fitz.open(r'electroverse/pages/syllabi_ee.txt')
+    doc_desc = fitz.open(r'pages/syllabi_ee.txt')
     pages = [page.get_text() for page in doc_desc]
     course_blocks_desc = re.split(r"(EE-\d{3}.*?)\n", "\n".join(pages))[1:]  # Splits on course code
     course_outlines_desc = {
