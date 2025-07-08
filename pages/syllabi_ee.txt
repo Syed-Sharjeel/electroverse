@@ -1,0 +1,242 @@
+EE-125 - Basic Electrical Engineering
+Fundamentals of Electric Circuits: Charge, Current, Voltage and Power, Voltage and Current 
+Sources, Ohm’s Law. Equivalent resistance of a circuit. 
+Voltage and Current Laws:   Node, Loop and Branches, Kirchhoff’s Current Law (KCL), 
+Kirchhoff’s  Voltage  Law  (KVL),  single-loop  circuits,  single  Node  Pair  Circuit,  Series  and 
+Parallel Connected Independent Sources. 
+Circuit Analysis Techniques: Nodal Analysis, Mesh Analysis, Linearity and Superposition, 
+Source Transformations, Thevenin and Norton Equivalent Circuits, Maximum Power Transfer 
+theorem. 
+Capacitors and Inductors:   Capacitor, Inductor, Inductance and Capacitance Combination, 
+voltage current relationship for inductor and capacitor. Energy storage. 
+Introduction  to  AC  Circuits:    Sinusoids  and  Phasors,  Phasor  Relationships  for  Circuit 
+Elements, Impedance and Admittance, Kirchhoff’s Laws in the Frequency Domain, Impedance 
+Combinations, Instantaneous and Average Power, Maximum Average Power Transfer, Effective 
+or RMS Value, Apparent Power and Power Factor, Complex Power, Conservation of AC Power. 
+Sinusoidal Steady-State Analysis: Nodal Analysis, Mesh Analysis, Superposition Theorem, 
+Source Transformation, Thevenin and Norton Equivalent Circuits. 
+
+EE-126 - CIRCUIT ANALYSIS 
+AC Circuits - Sinusoids and Phasors, Phasor Relationships for Circuit Elements, 
+Impedance and Admittance, Kirchhoff’s Laws in the Frequency Domain, 
+Impedance Combinations 
+Sinusoidal Steady-State Analysis - Nodal Analysis, Mesh Analysis, 
+Superposition Theorem, Source Transformation, Thevenin and Norton Equivalent 
+Circuits, Op Amp AC Circuits 
+AC Power Analysis - Instantaneous and Average Power, Maximum Average 
+Power Transfer, Effective or RMS Value, Apparent Power and Power Factor, 
+Complex Power, Conservation of AC Power, Power Factor Correction 
+Three-Phase Circuits - Balanced Three-Phase Voltages, Balanced Wye-Wye 
+Connection, Balanced Wye-Delta Connection, Balanced Delta-Delta Connection, 
+Balanced Delta-Wye Connection, Power in Balanced System, Unbalanced Three Phase Systems 
+Magnetically Coupled Circuits - Mutual Inductance, Energy in a Coupled 
+Circuit, Linear Transformers, Ideal Transformers, Ideal Autotransformers, Three Phase Transformers 
+Two-Port Network - Impedance Parameters, Admittance Parameters, Hybrid 
+Parameters, Transmission Parameters, Relationship between Parameters, 
+Interconnection of networks 
+EE-156 - Engineering Drawing 
+Mechanical Drawing - Drawing equipment and the use of instruments.  Basic drafting techniques and standards, Pictorial Drawing and their Projections 
+including Isometric view, Oblique view, Orthographic projections and standard practices, Development of Isometric views from orthographic Projects. 
+Section Views - Intersection at various positions of geometrical bodies, such as pyramids, Cylinders and Cones, section views of transformer and motor. 
+Civil Drawing - Plan, Elevations (front, left and right) and details of buildings such as Bungalows, Flats, Offices, Workshops school and market etc.,  Elements of Perspective drawings. 
+Electrical Drawing - Understand of basic electrical symbols, Schematic 
+Diagrams of substations, lighting and power distribution boards, home electrical wiring, industrial wiring, electrical drawings of industrial buildings and their specifications. Control drawings and their operation using simple diagrams of automation systems used in substation. Electrical Symbols and One line diagrams of a typical power system ,11 KV Electric substation building plan including equipment layout, Trenches (for cabling etc.) Manholes, Doors, Windows, Ventilators etc. 
+EE-163 - Computers and Programming 
+Introduction and History of Computing: Contribution of Charles Babbage, 
+foundation of IBM, Allan Turing’s Bombe, Post-WWII era: digital electronic computers, Micro-processor revolution, evolution of computer programming (programming paradigms) and its modern outlook. 
+Introduction to C/C++: Brief history and development, Typical C/C++ development environment, structure of C/C++ programs, compilation process and debugging. 
+C/C++ Building Blocks: Data-types, Variables, representation of variables in memory, IEEE 754 Floating Point Standard, Input/output Functions, Operators, Comments. 
+Structured Programming: Loops (for() loop, while() loop and do-while() loop), 
+Decision making constructs (if() and if()-else statements), nested loops and nested decision making constructs. 
+Arrays and Vectors: Array as linear data structure, Defining and manipulating 1D and 2D arrays, array memory allocation – Static vs. Automatic, C++ Standard Library Class Template Vector. 
+Functions: C++ Standard Library Header Functions, Function Prototype, Function Definition with multiple arguments, return multiple outputs with Global variables, Storage Classes and Scope rules, Array as argument to Function, Function Over-loading, and Recursion. 
+Pointers: Pointer Overview, Returning data from functions, Pointers and Arrays, Pointers and Strings, Double Indirection, Pointers to Pointers, Pointers to perform disk I/O operation. 
+Structures: Classical C Structure, Structure  of Array, and Union. Object Oriented Programming: Classes, Constructors and Destructors, Objects and Member Functions, Objects as Members of Classes, Operator Overloading, Inheritance, and Polymorphism. 
+EE-223 - Instrumentation and Measurement 
+General Theory-Classification of instruments, Block diagrams of various instrumentation schemes, Performance characteristics of instruments. 
+Measurement of Electrical Quantities -Basics of electromechanical instruments, moving coil and electrodynamometer instruments as ammeter, voltmeter and ohmmeter, Extension of ranges 
+Instrument Transformers - their burden and accuracy, clamp meter, Active and Reactive power measurement, Max. Demand indicator, Classification of energy meter, Induction type KWH meter, p.f meter. Measurement of resistance by bridge method and meggar, Measurement of Inductance and capacitance. Measurement of dielectric strength of insulators, high voltage surges. 
+Electronic Instruments: Data Acquisition, A/D conversion. Electronic and digital voltmeters, digital frequency meter, time interval measurement, Power and energy meter. 
+Transducers - Temperature transducers, Pressure transducers, Variable, resistance and inductance transducers, linear variable differential transformer (LVDT), capacitive, photoconductive, and piezo-electric transducers, thermo electric transducers. 
+Measurement of Nonelectrical Quantities - Measurement of temperature, pressure, flow, strains, thermal conductivity, motion, speed and vibrations. 
+EE-232 - Signals and Systems 
+LTI Systems: Continuous time LTI Systems, modeling of different physical systems (Electrical, Mechanical and coupled systems), state-space representation of LTI systems, Type of inputs,  Zero-input response, Convolution Integral, transient and forced/steady-state response, complete response of LTI systems using classical solution of differential equations, second order systems and their responses (underdamped, overdamped, critically damped)  
+Fourier Series: Fourier Series Representation of continuous time periodic signals, properties of continuous time Fourier series, exponential form of Fourier series (analysis and synthesis equations)  
+Fourier Transform: Fourier Transform Representation of continuous time aperiodic signals, properties of continuous time Fourier transform,  
+Laplace Transform:  Definition, derivation of Laplace transforms of simple functions, inverse transformation techniques Properties, application of Laplace for solution of differential equations of physical systems, analysis of LTI systems using Laplace transform   
+Magnitude-Phase: representation (for Frequency response) of LTI systems, transfer functions, Bode-plots, frequency responses of first and second order transfer functions. Design of passive and active 1st and 2nd order analog filters  
+EE-264 - Data Structures and Algorithms 
+Algorithm Fundamentals and Complexity Analysis:  Algorithm as technology, Design Approach (Design Paradigms), Representation Techniques, Time and Space Complexity, Order of Growth, common Growth Functions, standard notations. 
+Data Structure Fundamentals: Revision of C/C++ Data-types and Structures, Abstract Data Type (ADT) concept, 1D Array as ADT, ADT for varying-length character Strings, 2D Array as ADT, Structures and Classes as ADT, Pointer Arrays and Records as ADT. 
+Recursion, Stacks and Queues: Program design with Recursion, Complexity of recurrence problem, Stack ADT, Stack implementation with Arrays, C++ Template as Stack, Stack applications, Recursion with Stacks, Queue as ADT and, Queue implementation. 
+String Processing: String Operations, Word Processing, Pattern Matching Algorithms. 
+Numeric and Number Theoretic Algorithms: Calculating Polynomial Equations, Matrix Multiplication, Linear Equations, Trapezoidal Integration, Root Finding of polynomial, Greatest Common Divisor, Primality Testing, Integer Factorization. 
+Divide and Conquer Approach: Sorting and Searching Algorithms. 
+Linked Lists: Linked List as Data Structure, List  Operations,  Implementation using Arrays and Dynamic Variables, Circular and Doubly Linked List, Linked List Implementation in C++, Linked List applications. 
+Trees: Binary Trees, Representation in memory, Binary Tree Traversals, Lists as Binary Trees, Finding and Deleting element in Tree, Tree Traversal Algorithms, Binary Search Trees, Heaps, Heap-Sort Algorithm.
+Graphs: Representation in memory, Graph implementation, elementary Graph Algorithms, Traversal Algorithms, Shortest Path Algorithms. 
+EE-282 - ELECTROMAGNETIC FIELDS 
+Vector Analysis: scalars and vectors, vector algebra, the Cartesian coordinate system, vector components and Unit vectors, the vector field, the dot product the cross product, other coordinate systems, circular cylindrical coordinates, the spherical coordinate system, transformations between coordinate systems.
+Coulomb’s Law and Electric Field Intensity: The experimental law of coulomb, Electric field intensity, field of a point charge, field due to a continuous volume charge distribution, field of line charge, field of sheet charge, streamlines & sketches of fields.     
+Electric Flux Density Gauss’s Law and Divergence: Electric flux density, Gauss’s law, application of Gauss’s law, some symmetrical charge distributions, differential volume element, divergence, Maxwell’s first equation for electrostatics, the divergence theorem.     
+Energy and Potential: Energy expanded in moving a point charge in an electric field, the line integral, definition of potential difference and potential, the potential field of a point charge, the potential field of a system of charges, conservative property, potential gradient, the dipole, energy density in the 
+electrostatic field.     
+Conductor Dielectrics and Capacitances: Current and current density, continuity of current, metallic conductors, conductor properties and boundary conditions, semiconductors, the nature of dielectric materials, capacitance, several capacitance examples, of a two wire lines, current analogies.   
+The Steady Magnetic Field: Biot Savart’s Law, Amperes circuit law, curl, Stoke’s theorem, Magnetic flux and magnetic flux density, the scalar and vector magnetic potentials, derivation of steady magnetic field laws.     
+Magnetic Forces Materials and Inductance: Force on a moving charge, force on a differential current element, force between differential current element, force and torque on a closed circuit, the nature of magnetic materials, Magnetization and permeability, magnetic boundary conditions, the magnetic circuit, potential energy and forces on magnetic materials, inductance and mutual inductance.     
+Time Varying fields and Maxwell’s Equations: Faraday’s Law, displacement current, Maxwell’s equation in point form, Equation in integral form, the related potentials
+EE-346 - Electrical Machines-I 
+Fundamentals of Electrical Machinery: A linear machine, Left hand rule, right hand rule, a simple single loop AC and DC. Magnetic flux, flux density, magnetomotive force, permeability, hysteresis, Faraday’s law, Lenz’s law, induced force on wire, induction of voltage on a conductor.  DC Generators: Construction and working, types, emf equation, losses, efficiency, armature reaction, performance characteristics and their curves.  
+DC Motors: Types, Back EMF, torque, speed and speed regulation, performance characteristics and their curves, losses and efficiency.   
+Transformers: Types of transformer, single phase and three phase transformer, construction, principle of working, emf equation, Transformation ratios, no load working and vector diagram, magnetizing current, vector diagram on load, Equivalent circuit, Poly phase transformers, star delta and zig-zag connections for parallel operation, sharing of load, tertiary windings, harmonics and transients in transformers, on load tap changing transformers, auto transformers, vector groups, distribution and power transformer.  
+EE-347 - Electrical Machines II 
+Synchronous Generators: Construction and working, speed control, Internal Generated Voltage, Equivalent Circuit, Phasor Diagram, Power and Torque relationship, Modes of an alternator operation (Standalone and Parallel), voltage regulation of alternators.  
+Synchronous Motors: Overexcited and under-excited motors, power factor and power factor control, starting of synchronous motors, torque speed, V-curves circle diagram. 
+Single Phase Induction Motor:  Single phase induction motors, construction and working, rotating field theory, slip and its effect on motor current quantities. Losses, efficiency and performance curves. Starting, full load and maximum torque relations, torque slip characteristics.  
+Three Phase Induction Motor:   Equivalent circuit of induction motor, cage rotor, double cage and high torque motor, magnetizing current of an induction motor, noise of induction motor, crawling and cogging, speed and power factor control of induction motors by injecting EMF in the circuit, phase advancers and phase compensated induction motor, induction generators and regulators, testing of induction motor, efficiency and losses, circle diagram, starter calculations
+EE-354 - Embedded System   
+Microprocessor and Microcontroller (latest) Architecture.  Internal Registers, Machine code, addressing modes and Instruction Set, C and the Compiler, Debugging Software and Hardware, Threads,  Tasks and Simple Scheduling, Branching, Interrupt handling,  I/O and Communication Ports programming, Digital and Analog I/O Peripherals, Analog to Digital (A/D) and Digital to Analog (D/A) interfacing, Simulation design and debugging, Introduction and applications of Internet of Things (IoT). 
+EE-352 - ELECTRICAL POWER TRANSMISSION  
+Systems of Transmission: Systems of DC and AC Transmission; Transmission and sub-transmission, standard voltages in and abroad for transmission and subtransmission, WAPDA & KESC practices. 
+Basic Concepts: Phasor notation, complex power, power triangle, direction of power flow, current and power in balanced three-phase circuits. 
+Representation of Power Systems: Percent and Per-Unit quantities, Selection of base and change in base of p.u. quantities, Node Equations, One-line diagram, impedance and reactance diagrams. 
+Series Impedance of Transmission Lines: Conductor types, Resistance, Skin effect, Line inductance based on flux considerations. Inductance of single phase 2-wire line, inductance of composite conductor line, use of tables,. Inductance of 3-ph line with equilateral and unsymetrical spacings, transposition, inductance of Bundled conductors. 
+Capacitance of Transmission Lines: Review of Electric field on a long straight conductors, capacitance of two-wire, 3-ph line; Effect of Earth on capacitance; capacitance of bundled conductors, paralled circuit lines. 
+Current and Voltage Relations on a Transmission Line: Representation of lines; The short, medium and long transmission lines, solution of equations and their interpretation travelling waves, Hyperbollic form of the equation, Equivalent circuits, power flow through the line, voltage regulation and power circuit diagram, line surges. 
+Mechanical Design of Overhead Lines: Line supports, sag and tension calculations, total length of conductor, supports at different levels, mechanical degree of safety, effect of wind pressure & ice loading, conductor vibration & use of dampers. 
+Insulators:  Insulator material, types of insulators, voltage distribution over insulator string, string efficiency, methods of improving the string efficiency, testing of insulators. 
+Corona:  The phenomenon of corona, disruptive critical voltage and visual critical voltage, conditions effecting corona loss, power loss due to corona, radio interference due to corona. 
+Power System Stability:  stability problem, steady state and transient stability, rotor dynamics and swing equation, the power angle equation, equal area criterion of stability, solution of swing equation by graphical method. 
+EE-359 - Electrical Power Distribution & Utilization 
+Distribution System Planning and Automation – Introduction and Factors affecting system planning, Present Planning Techniques and Modules, Upcoming Planning techniques, Futuristic Nature of Distribution Planning, Distribution System Automation. 
+Load Characteristics - Relationship between load and loss factors, Load Forecasting, Load Management, Rate Structure, and Electric Meter Types; 
+Applications of Distribution Transformers –Types, Regulation, Transformer Efficiency, Terminal or Lead markings, Transformer Polarity, Distribution Transformer loading guides, Three phase connections; 
+Substation Design - Schemes, Substation location, Rating, Comparison of four and six feeders, SCADA, Substation Cabling and Grounding; 
+Design Consideration of Primary System - Radial and Loop Type primary feeders, Primary Network, Tie Lines, Radial Feeders with uniformly and non
+uniformly distributed loads; 
+Voltage Drop and Power Loss Calculations in different configurations, Power Factor Improvement Calculations. 
+EE-362 - Power System Analysis 
+Fundamentals: Phasors, Instantaneous Power in single phase circuits, complex power, Network Equations, Balanced three Phase Circuits, Power In balanced three phase circuits, Advantages of Balanced three phase circuits’ v/s singles circuits. 
+Power Transformers: Per Units System, Three phase transformer connections and phase shift, per unit equivalent circuits of balanced three phase two winding transformers, three winding transformers, Autotransformers. 
+The Admittance Model and Network Calculations : Branch and Node admittances Mutually coupled Branches in Y-bus; Equivalent Admittance Network; Modification of Y-bus; Impedance matrix and Y-bus; the method of successive elimination; Node Elimination (Kron Reduction); Triangular Factorization; 
+Power Flow: Direct Solutions to Linear Algebraic Equations; Gaussian Elimination, Iterative Solutions to linear algebraic equations, Jacobian Gauss Siedal, Iterative Solutions to nonlinear algebraic equations; Newton Raphson Method, The Power Flow Problem, Power Flow Solutions,  
+Symmetrical Faults: Series RL circuits transients, three phase short circuit Unloaded Synchronous Machine, Power System three phase short circuits, Bus Impedance Matrix. 
+Symmetrical Components: Definition of symmetrical components, Sequence networks of impedance loads, sequence networks of series impedances, sequence networks of three phase lines, sequence networks of rotating machines, Per unit sequence models of three two winding and three winding transformers., Power in Sequence Networks. 
+Unsymmetrical Components: System Representation, Single line to ground fault, Line to line fault, double line to ground fault, Sequence bus impedance matrix. 
+EE 375 - FEEDBACK CONTROL SYSTEMS   
+Introduction: Introduction to control systems, examples and classifications, Feedback and its characteristics. Nature and representation of control system problem, block diagram fundamentals and terminology for a feedback control system. Response of second order systems with time domain specifications. Closed Loop Transfer functions of physical systems. 
+Block Diagram Algebra: Canonical and unity feedback forms of control system block system block diagram, block diagram reduction techniques and theorems, signal flow graph algebra, block diagram reduction using signal flow graphs.     
+Control System Stability: Stability of control systems, Routh Hurwitz Criteria for Stability, Conditional Stability, and Classification of feedback systems by type, analysis of system types, Steady State error efficiency, coefficients, and constant 
+Root Locus: Introduction, rules for construction of root locus, qualitative analysis of root locus, analysis of performance characteristic of systems in time domain, dominant pole zero approximations, System design via root locus compensation, PID controller.   
+Control System Design: Introduction and review of control system design for closed loop systems via gain and phase margin adjustment in ode/Nyquist/Polar plots.   
+Introduction to Digital Control: Computer control systems, Single-loop digital control system, Digital control vs Analog Control systems, Relation between S and z-domain and responses.  
+EE-395 - Digital Signal Processing 
+Overview of Discrete-time Signals and Systems:  Sampling, Aliasing, 
+Quantization, Convolution, Correlation, Properties of Discrete time Signals and 
+Systems;  
+Linear Constant Coefficient Difference Equations: Modeling discrete systems, 
+conversion of differential equations into difference equations, solution of 
+difference equations.  
+Discrete Time Fourier Series:  Representation of discrete time periodic signals, 
+signal analysis using discrete time Fourier series, properties of discrete time 
+Fourier series.  
+Discrete Fourier Transform:  Frequency Domain Sampling, DFT Properties, 
+Inverse DFT, Windowing and DFT Leakage, Direct Computation of DFT;  
+Fast Fourier Transform: Divide and Conquer, Radix algorithms; Inverse FFT, 
+Applications of FFT  
+Discrete time systems implementation:  Overview of z-transform, Analysis of 
+discrete system, Structures of Discrete time systems, Fixed and Floating number 
+types, Quantization effects.  
+Design of Digital Filters:  General Considerations, FIR and IIR Filters, 
+Techniques of FIR and IIR filter Design.  
+Multirate Signal Processing: Down sampling and Up sampling, Decimation and 
+Interpolation 
+Page 24 of 33 
+EE-313 - POWER ELECTRONICS  
+Introduction: SSDs in power electronics, power diodes, power transistors, Power 
+MOSFETS, Thyristors, Triacs, Diac. Characteristics of GTO, RCT, etc. Series 
+and parallel operation of SCR, LASCR. Thyristor turn on, integral cycle control 
+and phase angle control, elementary and advanced firing schemes, sequence and 
+close loop control.  
+Thyristor Commutation:  Self-commutation, impulse commutation, series 
+capacitor commutation, parallel capacitor commutation.  
+Uncontrolled and Controlled Rectifiers: Single phase, three phase, semi 
+converter, full converter, dual converter, analysis and performance, parameters as 
+harmonic factor, utilization factor, power factor, distortion factor, etc. rectifiers 
+with purely resistive, highly inductive and RL loads. Application of Uncontrolled 
+and Controlled rectifiers in electrical drives and power system.  
+DC Chopper: Principle, Step-up and Step-down operation, Buck regulator, 
+Boost regulator, Buckboost regulator, Cuck regulator, Choppers using thyristors. 
+Application of DC Uncontrolled and Controlled rectifiers in electrical drives and 
+power system.  
+Protection Analysis: Over voltage, over current, di/dt & dv/dt protection, heat 
+sinks.  
+Inverters: Principles, half bridge, full bridge inverters, constant phase width 
+modulation, variable PW modulation, sinusoidal PW modulation, modified 
+SPWM. Application of inverters in electrical drives and power system.  
+Electronic Power Supplies: Design and analysis of regulated power supplies, 
+switch mode power supplies, Uninterrupted power supplies. Application of 
+Electronic Power supplies in electrical drives and power system. 
+Page 25 of 33    
+EE-414 - Power Generation 
+Principles of Energy Conversion and Integration of energy sources– 
+Introduction, types of conventional and non-conventional energy sources, 
+efficiency and cost comparison, site selection, thermodynamic cycles, integration 
+of different energy sources.  
+Conventional Energy Sources: Thermal Power Plants:  Working of power plant, 
+plant layout, types of boiler, types of steam and gas turbines and other station 
+auxiliaries.  
+Hydroelectric Power Plants:  Working, plant layouts, types of hydro-electric 
+turbine and other station auxiliaries.  
+Nuclear Power Plants:  Working, plant layout, fission and fusion reaction, 
+critical mass chain reaction, moderators, reactor control and cooling, classification 
+of reactors, radiation damages and shielding.  
+Non-Conventional Energy Sources: Solar Photovoltaic:  PV system, types of 
+solar cells, charge controllers, shading effect and its protection, power and 
+efficiency calculations.  
+Wind Energy: Types of wind turbine, kinetic energy conversion, wind turbine 
+generators, power and energy equations, wind speed characteristics of a site, air 
+density, aerodynamics of wind turbine.  
+Bio Mass: Components and layout, agricultural residues, environmental benefits 
+and impacts.  
+Fuel Cells: Thermodynamic principles of fuel cells, efficiency of fuel cell and 
+limiting factors, design of fuel cells, fuel cells in electric vehicles. 
+Page 28 of 33 
+EE-457 - Electrical Power System Protection 
+Circuit Breakers and Switchgears: Introduction, Principle of circuit 
+interruption, Short circuit studies in a power system, Faults at Generator 
+Terminals, Faults in the system, Circuit breaker-Types and characteristics, Type 
+of switchgear, Interrupting capacity of a circuit breakers and switchgears, Ratings 
+of circuit breakers, Circuit Breaker operating mechanism, HVDC circuit breaking, 
+Current Limiting Reactors; Use and location, Short circuit currents and size of 
+reactor. 
+Modern Circuit Breakers: Construction and testing, Modern trend in HV circuit 
+breakers, Vacuum Circuit breakers, SF6 Power Circuit breakers, Transients in 
+power system, Switching Transients, Testing of circuit breaker, Test techniques 
+for high rating circuit breaker, Selection of circuit breaker. 
+Protective Relays - Need for protective relaying in power systems, Basic 
+requirements of protective relaying, Principles and characteristics of protective 
+relaying, Theory and classification of relays, Theory of application of relays, 
+Instrument Transformers, Types of relays, Auto reclosing, Under frequency/over 
+frequency relays, Microprocessor based relays, Numerical relays, Protection 
+Coordination. 
+Protection of Generators - Allocation of protective devices for stator, rotor, and 
+prime mover of a generator, Faults in Generator windings, Generator Protection 
+Protection of Transformers - Busbars and Motors: Transformer Protection, 
+Short circuit protection of Transformers by percentage differential relays,  
+Differential Protection of a three winding transformer, Generator transformer Unit 
+Protection, Gas accumulator and pressure relays, Protection of Motors, Protection 
+of induction motors by static relays. 
+Protection of Transmission Lines - Busbar protection, Distance protection, 
+Zones of protection. 
+Page 29 of 33  
+EE-401 - Electrical Engineering Project 
+The final year students will be required to consult the Chairman of Electrical 
+Engineering Department regarding the offering of various projects in the 
+department. The student or group of students will be assigned the project by 
+teaching by teacher concerned and will carry out the assignment as required an 
+directed by the teacher. At the end of the academic session, they will submit the 
+written report on work of their project to the Chairman, preferably in the typed 
+form. The students will be required to appear before a panel of examiners for oral 
+examination. 
+Page 33 of 33 
