@@ -45,7 +45,7 @@ vector_store, embed_fn = load_chroma_db()
 
 
 # Streamlit UI
-st.title("⚡ ElectroVerse: Your AI Assistant for Fundamentals of Electric Circuits")
+st.title("⚡ ElectroVerse: Chatbot")
 
 if "messages" not in st.session_state:
     st.session_state.messages = []
@@ -55,25 +55,6 @@ for m in st.session_state.messages:
         st.markdown(m["content"])
 
 query = st.chat_input("Ask a question about the textbook:")
-
-develepor_info = {
-    "Name": "Hafiz Syed Sharjeel Najam",
-    "Education": "Currently doing BE - Electrical Engineering from NED University Karachi",
-    "Intrests": ['Power Systems', 'Generative AI', 'Machine Learning', 'Data Science', 'Python'],
-    "Certifications": {
-        "Certified Data Scientist": "NED Academy",
-        "Electric Power Systems": "University at Buffalo",
-        "Google 5 Days Generative AI Intensive": "Google & Kaggle",
-        "Machine Learning": "Kaggle",
-        "Python": "Kaggle"
-    },
-    "Contact": {
-        "Linkedin": "https://pk.linkedin.com/in/syedsharjeel321",
-        "Github": "https://github.com/syed-sharjeel",
-        "Email": "syedsharjeel321@gmail.com",
-        "Kaggle": "https://kaggle.com/syedsharjeelnajam"
-    }
-}
 
 if query:
     embed_fn.doc_mode = False
@@ -86,8 +67,7 @@ if query:
     prompt = f"""
     You are a helpful tutor for first-year electrical-engineering students.
     Use the reference text below to answer clearly and concisely in plain language.
-    Reference text (from the book): {context}. If {query} is irrelevant to electrical concept you may ignore it. If someone asks about develepor
-    answer him from {develepor_info}
+    Reference text (from the book): {context}. If {query} is irrelevant to electrical concept you may ignore it.
 
     QUESTION: {query}
     """
