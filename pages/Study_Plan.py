@@ -46,7 +46,7 @@ collection = chroma_client.get_or_create_collection(
 
 # Streamlit UI
 import streamlit as st
-st.header('Chatbot - Study Plan')
+st.header('Study Plan')
 
 course = st.selectbox('Enter Course', options=['EE-125 - Basic Electrical Engineering',
                                       'EE-126 - Circuit Analysis',
