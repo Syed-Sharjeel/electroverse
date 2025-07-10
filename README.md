@@ -1,6 +1,8 @@
 # ElectroVerse
 *Smart Assistant for “Fundamentals of Electric Circuits”*
+## Visit Now: [ElectroVerse](https://electroverse.streamlit.app)
 
+## Introduction
 ElectroVerse is an smart assistant built for students of Electrical Engineering. It is trained on the textbook *“Fundamentals of Electric Circuits”* by Alexander & Sadiku. Using Google's Gemini LLM and a RAG-based architecture, it provides well-grounded, reliable, and curriculum-aligned responses for learning, revision, and practice.
 
 # Key Features
