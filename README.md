@@ -17,7 +17,7 @@ ElectroVerse is an smart assistant built for students of Electrical Engineering.
 - ## Chapter-Wise Summarization
   Summarize any chapter in seconds — ideal for quick revisions and concept brushing before exams
 
-# 💡 Technology Stacks
+# Technology Stacks
 
 | Layer | Tool Technology |
 |----------|---------|
