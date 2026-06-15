@@ -1,88 +1,125 @@
 import streamlit as st
-import fitz
-import re
-from google import genai
-from google.api_core import retry
-from google.genai import types
-import kagglehub
-import sys
-import pysqlite3
-sys.modules["sqlite3"] = pysqlite3
-import chroma_db
 import chromadb
 from chromadb import EmbeddingFunction, Embeddings
+from sentence_transformers import SentenceTransformer
+from groq import Groq
 
-# Initialise Gemini client & retry wrapper
-genai_client = genai.Client(api_key=st.secrets["GOOGLE_API_KEY"])
+# CONFIGURATION
 
-is_retriable = lambda e: (isinstance(e, genai.errors.APIError) and e.code in {429, 503})
-if not hasattr(genai.models.Models.generate_content, "__wrapped__"):
-    genai.models.Models.generate_content = retry.Retry(predicate=is_retriable)(
-        genai.models.Models.generate_content
-    )
+st.set_page_config(
+    page_title="ElectroVerse",
+    page_icon="⚡",
+    layout="wide"
+)
 
+# GROQ CLIENT
+
+groq_client = Groq(
+    api_key=st.secrets["GROQ_API_KEY"]
+)
+
+# EMBEDDING MODEL
+
+embedding_model = SentenceTransformer(
+    "BAAI/bge-small-en-v1.5"
+)
+
+# CHROMA EMBEDDING FUNCTION
+
+class BGEEmbeddingFunction(EmbeddingFunction):
+    def __call__(self, texts) -> Embeddings:
+
+        embeddings = embedding_model.encode(
+            texts,
+            convert_to_numpy=True,
+            normalize_embeddings=True
+        )
+        return embeddings.tolist()
+
+# LOAD CHROMA DB
+@st.cache_resource
 def load_chroma_db():
-    class GeminiEmbeddingFunction(EmbeddingFunction):
-        doc_mode = True
-
-        def __call__(self, texts) -> Embeddings:
-            task = "retrieval_document" if self.doc_mode else "retrieval_query"
-            resp = genai_client.models.embed_content(
-                model="models/text-embedding-004",
-                contents=texts,
-                config=types.EmbedContentConfig(task_type=task),
-            )
-            return [e.values for e in resp.embeddings]
-    client = chromadb.PersistentClient(path="./chroma_db")  # your folder
-    embed_fn = GeminiEmbeddingFunction()
-    collection = client.get_collection(
-        name="fundamentals_of_electric_circuits",
-        embedding_function=embed_fn
+    embed_fn = BGEEmbeddingFunction()
+    chroma_client = chromadb.PersistentClient(
+        path="./chroma_db"
     )
+    collection = chroma_client.get_or_create_collection(
+    name="fundamentals_of_electric_circuits"
+)
     return collection, embed_fn
-
 vector_store, embed_fn = load_chroma_db()
 
-
-# Streamlit UI
-st.title("⚡ ElectroVerse: Chatbot")
-
+# STREAMLIT UI
+st.title("⚡ ElectroVerse")
+st.subheader("Fundamentals of Electric Circuits Assistant")
 if "messages" not in st.session_state:
     st.session_state.messages = []
 
-for m in st.session_state.messages:
-    with st.chat_message(m["role"]):
-        st.markdown(m["content"])
-
-query = st.chat_input("Ask a question about the textbook:")
-
+for message in st.session_state.messages:
+    with st.chat_message(message["role"]):
+        st.markdown(message["content"])
+# USER INPUT
+query = st.chat_input(
+    "Ask a question about Electrical Engineering..."
+)
 if query:
-    embed_fn.doc_mode = False
-    query_embed = embed_fn([query])[0]
-    results = vector_store.query    (
-        query_embeddings=[query_embed], n_results=4, include=["documents"]
+    st.session_state.messages.append(
+        {
+            "role": "user",
+            "content": query
+        }
     )
-    context = "\n\n".join(results["documents"][0])
-
-    prompt = f"""
-    You are a helpful tutor for first-year electrical-engineering students.
-    Use the reference text below to answer clearly and concisely in plain language.
-    Reference text (from the book): {context}. If {query} is irrelevant to electrical concept you may ignore it.
-
-    QUESTION: {query}
-    """
-
-    answer = genai_client.models.generate_content(
-        model="gemini-2.0-flash",
-        contents=prompt
-    ).text
-
-    st.session_state.messages += [
-        {"role": "user", "content": query},
-        {"role": "assistant", "content": answer},
-    ]
-
     with st.chat_message("user"):
         st.markdown(query)
+
+    # RETRIEVAL
+    query_embedding = embed_fn([query])[0]
+    results = vector_store.query(
+        query_embeddings=[query_embedding],
+        n_results=4,
+        include=["documents"]
+    )
+    context = "\n\n".join(
+        results["documents"][0]
+    )
+
+    prompt = f"""
+You are ElectroVerse, an expert tutor for first-year Electrical Engineering students.
+
+Instructions:
+- Answer only using the provided context.
+- Use simple language.
+- Explain concepts step-by-step.
+- If the answer is not found in the context, say:
+  "The information is not available in the textbook."
+
+Context:
+{context}
+
+Question:
+{query}
+"""
+    # RESPONSE GENERATION
+    with st.spinner("Thinking..."):
+        response = groq_client.chat.completions.create(
+            model="llama-3.3-70b-versatile",
+            messages=[
+                {
+                    "role": "user",
+                    "content": prompt
+                }
+            ],
+            temperature=0.3,
+            max_tokens=1024
+        )
+        answer = response.choices[0].message.content
+    
+    st.session_state.messages.append(
+        {
+            "role": "assistant",
+            "content": answer
+        }
+    )
+
     with st.chat_message("assistant"):
         st.markdown(answer)
